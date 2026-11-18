@@ -1,0 +1,19 @@
+{
+  "name": "fabi-brasil-ofertas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agendamento e disparo de ofertas de afiliado Shopee para WhatsApp, Telegram e Instagram",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "DEMO=1 node --disable-warning=ExperimentalWarning --watch server/index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.18",
+    "express": "5.1.0",
+    "pino": "9.6.0",
+    "qrcode": "1.5.4"
+  }
+}
